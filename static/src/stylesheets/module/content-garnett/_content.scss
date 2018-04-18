@@ -369,11 +369,9 @@
 
 .content__dateline {
     @include fs-textSans(1);
-    position: relative;
-    color: $neutral-2;
     box-sizing: border-box;
-    padding-top: $gs-baseline / 6;
-    margin-bottom: $gs-baseline / 2;
+    color: $neutral-2;
+    margin: ($gs-baseline / 6) 0 ($gs-baseline / 2);
 
     time {
         display: inline-block;
@@ -394,18 +392,6 @@
     .relative-timestamp__icon {
         vertical-align: top;
         top: 3px;
-    }
-
-    @include mq(tablet) {
-        padding-right: 0;
-    }
-
-    @include mq(leftCol) {
-        min-height: gs-height(1) + $gs-baseline;
-        padding-top: $gs-baseline/6;
-        padding-bottom: $gs-baseline;
-        margin-bottom: 0;
-        border-top: 1px dotted $neutral-5;
     }
 }
 
