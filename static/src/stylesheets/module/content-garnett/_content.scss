@@ -1242,7 +1242,6 @@
         }
         .meta__social {
             @include mq($until: leftCol) {
-                background-color: red !important;
                 border-bottom: 1px solid $garnett-neutral-6;
             }
         }
