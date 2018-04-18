@@ -1269,18 +1269,6 @@
             border-color: $neutral-1;
             padding-bottom: 1px;
         }
-
-        .social__tray-close .inline-close {
-            background-color: $neutral-1;
-
-            &:hover {
-                background-color: $neutral-2;
-            }
-
-            svg {
-                fill: $neutral-4;
-            }
-        }
     }
 }
 
