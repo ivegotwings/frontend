@@ -41,13 +41,20 @@
     }
 
     .block-share__item .inline-icon,
+    .social-icon__svg,
     .commentcount2__heading span,
     .inline-close svg,
     .inline-triangle,
-    .old-article-message .old-article-message--clock svg,
-    .social-icon svg,
-    .social-icon__svg {
+    .old-article-message .old-article-message--clock svg {
         fill: $kickerColor;
+    }
+
+    .social-icon {
+        &:hover,
+        &:focus {
+            background-color: $kickerColor;
+            border-color: $kickerColor;
+        }
     }
 
     .inline-garnett-quote svg {
@@ -62,23 +69,6 @@
     .content__headline-column-wrapper--column,
     .content__labels--column {
         background-color: $kickerColor;
-    }
-
-    .block-share__item,
-    .social-icon {
-        &:focus,
-        &:hover {
-            background-color: $kickerColor;
-            border: 1px solid $kickerColor;
-        }
-    }
-
-    .social-tray__button {
-        &:hover {
-            .inline-close {
-                background-color: $kickerColor;
-            }
-        }
     }
 
     .block--content,
@@ -102,27 +92,6 @@
     .content__label-interview {
         background-color: $pillarColor;
         box-shadow: $gs-baseline / 3 0 0 $pillarColor, -$gs-baseline / 2 0 0 $pillarColor;
-    }
-
-    .meta__extras--crossword {
-        .social-icon,
-        .social-tray__icon {
-            background: $garnett-neutral-5;
-            border: 1px solid $garnett-neutral-4;
-
-            &:hover {
-                background: $kickerColor;
-                border: 1px solid $kickerColor;
-            }
-        }
-
-        .social-icon svg {
-            fill: $kickerColor;
-
-            &:hover {
-                fill: $garnett-neutral-5;
-            }
-        }
     }
 }
 //////** Discussion (comment) styling **//////////
@@ -187,36 +156,19 @@
         left: $gs-gutter/2;
     }
 
-    .block-share__item,
-    .inline-close,
-    .social-icon {
-        background-color: transparent;
-        border: 1px solid $neutral-4;
-
-        &:focus,
-        &:hover {
-            svg {
-                fill: $garnett-neutral-5;
-            }
-        }
-    }
-
     .block-share__item .inline-icon,
+    .social-icon__svg,
     .commentcount2__heading span,
     .inline-close svg,
-    .old-article-message .old-article-message--clock svg,
-    .social-icon svg,
-    .social-icon__svg {
+    .old-article-message .old-article-message--clock svg {
         fill: $kickerColor;
     }
 
-    .block-share__item,
-    .meta__twitter a,
     .social-icon {
-        &:focus,
-        &:hover {
+        &:hover,
+        &:focus {
             background-color: $kickerColor;
-            border: 1px solid $kickerColor;
+            border-color: $kickerColor;
         }
     }
 }
@@ -285,10 +237,6 @@
     .inline-video-icon__svg,
     .inline-volume-high.inline-icon {
         fill: $mediaColor;
-    }
-
-    .social-icon__svg {
-        fill: $garnett-neutral-4;
     }
 
     a.content__series-label__link {

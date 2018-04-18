@@ -807,14 +807,6 @@
         border-color: $paid-article-header;
     }
 
-    .social--expanded-top {
-        background-color: $paid-article;
-
-        .inline-close {
-            background-color: $neutral-6;
-        }
-    }
-
     &.tonal--tone-media {
         .content__headline,
         .from-content-api,
@@ -1260,14 +1252,6 @@
 
         .old-article-message--clock svg {
             fill: $neutral-3;
-        }
-    }
-
-    .meta__social {
-        .social--expanded-top {
-            background-color: $multimedia-support-5;
-            border-color: $neutral-1;
-            padding-bottom: 1px;
         }
     }
 }

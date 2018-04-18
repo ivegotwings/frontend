@@ -71,8 +71,7 @@
         &.content {
             background-color: $multimedia-support-5;
 
-            .tonal__head,
-            .meta__social .social--expanded-top {
+            .tonal__head {
                 background-color: lighten($news-support-6, 5%);
             }
 

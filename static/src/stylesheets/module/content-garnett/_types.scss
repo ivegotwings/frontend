@@ -38,7 +38,8 @@ $quote-mark: 35px;
     .content__standfirst,
     .old-article-message,
     .social--top,
-    .meta__contact-wrap {
+    .meta__contact-wrap,
+    .meta__numbers {
         padding-left: $gs-gutter/2;
         padding-right: $gs-gutter/2;
         @include mq(mobileLandscape) {
@@ -218,9 +219,7 @@ $quote-mark: 35px;
         order: 5;
     }
 
-    .block-share__item,
-    .inline-close,
-    .social-icon {
+    .inline-close {
         background-color: transparent;
         border: 1px solid $neutral-4;
 
@@ -232,56 +231,6 @@ $quote-mark: 35px;
         }
     }
 
-    .social-icon, .social-tray__icon {
-        @include mq(leftCol) {
-            max-width: 29px;
-            min-width: 29px;
-            height: 29px;
-        }
-        @include mq(wide) {
-            min-width: 32px;
-            max-width: 100%;
-            width: auto;
-            height: 32px;
-        }
-    }
-
-    .social--top {
-        padding-top: 0!important;
-        //only way to override behaviour
-    }
-
-    .meta__numbers,
-    .meta__social {
-        @include multiline(1, $garnett-neutral-4, top);
-        border-top: 0;
-        padding-top: $gs-baseline / 2;
-    }
-
-    .meta__social {
-        @include mq($until: leftCol) {
-            border-bottom: 1px solid $garnett-neutral-4;
-        }
-    }
-
-    .meta__numbers {
-        margin-right: $gs-gutter/2;
-        @include mq(mobileLandscape) {
-            margin-right: $gs-gutter;
-        }
-        @include mq(phablet) {
-            margin-right: 0;
-        }
-        @include mq($until: leftCol) {
-            &:before {
-                content: none;
-            }
-        }
-    }
-
-    .meta__number:not(.u-h)+.meta__number {
-        border-color: $garnett-neutral-4;
-    }
     // *************** Header and Body Styles ***************
 
     .content__main-column {
@@ -1085,11 +1034,10 @@ $quote-mark: 35px;
 
     .meta__numbers,
     .meta__social {
-        @include multiline(1, $garnett-neutral-7, top);
+        border-color: $garnett-neutral-7;
     }
 
     .meta__numbers {
-        background-image: none;
         padding-top: 0;
     }
 
