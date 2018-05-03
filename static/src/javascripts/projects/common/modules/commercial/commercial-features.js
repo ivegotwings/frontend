@@ -108,7 +108,6 @@ class CommercialFeatures {
             !isMinuteArticle &&
             config.switches.enableDiscussionSwitch &&
             config.page.commentable &&
-            isUserLoggedIn() &&
             (!isLiveBlog || isWidePage);
 
         this.liveblogAdverts =

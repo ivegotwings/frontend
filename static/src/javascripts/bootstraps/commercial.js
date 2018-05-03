@@ -25,7 +25,7 @@ import {
 import { trackPerformance } from 'common/modules/analytics/google';
 import { commercialFeatures } from 'common/modules/commercial/commercial-features';
 import { initCheckDispatcher } from 'commercial/modules/check-dispatcher';
-import commentAdverts from 'commercial/modules/comment-adverts';
+import { initCommentAdverts } from 'commercial/modules/comment-adverts';
 
 const commercialModules: Array<Array<any>> = [
     ['cm-highMerch', initHighMerch],
@@ -36,7 +36,6 @@ const commercialModules: Array<Array<any>> = [
     ['cm-paidforBand', initPaidForBand],
     ['cm-carrot', initCarrotTrafficDriver],
     ['cm-checkDispatcher', initCheckDispatcher],
-    ['cm-commentAdverts', commentAdverts],
 ];
 
 if (!commercialFeatures.adFree) {
@@ -45,6 +44,7 @@ if (!commercialFeatures.adFree) {
         ['cm-articleAsideAdverts', initArticleAsideAdverts, true],
         ['cm-articleBodyAdverts', initArticleBodyAdverts, true],
         ['cm-liveblogAdverts', initLiveblogAdverts, true],
+        ['cm-commentAdverts', initCommentAdverts, true],
         ['cm-stickyTopBanner', initStickyTopBanner]
     );
 }
