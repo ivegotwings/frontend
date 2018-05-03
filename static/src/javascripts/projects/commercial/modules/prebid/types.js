@@ -36,6 +36,7 @@ export type PrebidSlotKey =
     | 'right'
     | 'inline1'
     | 'inline'
+    | 'comments'
     | 'mostpop';
 
 export type PrebidSlotLabel =
